@@ -9,9 +9,7 @@ var app = express();
 // app.use(cors());
 app.set('view engine', 'ejs');
 
-app.use('/styles', express.static('styles'));
-// app.use(express.static(path.join(__dirname, '../styles')));
-
+app.use('/public', express.static('public'));
 // app.get('/', function(req, res){
 // 	res.sendFile(indexFile);
 // });
