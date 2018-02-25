@@ -1,9 +1,11 @@
 var http = require('http');
 var fs = require('fs');
 var express = require('express');
+var bodyparser = require('body-parser')
 // var cors = require('cors');
 const path = require('path');
 // var indexFile = path.resolve(__dirname, '../index.html');
+var urlEncodedParser = bodyparser.urlencoded({extended:false})
 
 var app = express();
 // app.use(cors());
@@ -19,6 +21,11 @@ app.get('/home', function(req, res){
 })
 app.get('/', function(req, res){
 	res.render('home');
+})
+
+app.post('/home', urlEncodedParser, function(req, res){
+	req.body
+	res.render('next')
 })
 
 app.get('/name/:name', function(req, res){
