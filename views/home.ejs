@@ -2,25 +2,33 @@
 <html>
 <head>
 	<title>Chat App</title>
-	<link rel="stylesheet" type="text/css" href="public/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../public/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../public/style.css">
 </head>
 <body>
+	<div id="header">
+		<div class="container">
+			<div class="Logo">
+				<h1>Logo</h1>
+			</div>
+			<div class="form">
+				<form method="POST" action="/contact">
+					<input type="text" name="userName" placeholder="Username" class="input" class="form-control">
+					<input type="password" name="pwd" placeholder="Password" class="input" class="form-control">
+					<button type="submit" class="login">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	
-	<div>
-
-		<h1> CHAT APP</h1>
-	</div>
-	<div>
-		<h1>home</h1>
-		<form>
-			First Name: <input type="text" name="firstName" />
-			<br>
-			Username: <input type="password" name="password
-			 /">
-			 <button>Submit</button>
+	<div id="data">
+		<form method="POST" action=/contact>
+			<strong>Username: </strong><input type="text" class="form-control" value="" name="name">
+			<strong>Password: </strong><input type="text" class="form-control" value="" name="Job">
+			<strong>Confirm Password: </strong><input type="text" class="form-control" name="Adres">
+			<button class="btn btn-success">Submit</button>
 		</form>
-
 	</div>
+
 </body>
 </html>

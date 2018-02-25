@@ -21,6 +21,11 @@ app.get('/', function(req, res){
 	res.render('home');
 })
 
+app.get('/name/:name', function(req, res){
+	var james = {age:20, job:"ninja"}
+	res.render('home', {dat:james});
+})
+
 app.listen(4100);
 
 console.log('server now running at port 4100');
