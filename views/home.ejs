@@ -8,13 +8,13 @@
 <body>
 	<div id="header">
 		<div class="container">
-			<div class="Logo">
+			<div class="Logo" id="logoo">
 				<h1>Logo</h1>
 			</div>
 			<div class="form">
 				<form method="POST" action="/home">
-					<input type="text" name="userName" placeholder="Username" class="input" class="form-control">
-					<input type="password" name="pwd" placeholder="Password" class="input" class="form-control">
+					<input type="text" name="userName" placeholder="Username" class="input" class="form-control" required>
+					<input type="password" name="pwd" placeholder="Password" class="input" class="form-control" required>
 					<button type="submit" class="login">Login</button>
 				</form>
 			</div>
@@ -23,12 +23,16 @@
 	
 	<div id="data">
 		<form method="POST" action=/home>
-			<strong>Username: </strong><input type="text" class="form-control" value="" name="name">
-			<strong>Password: </strong><input type="text" class="form-control" value="" name="Job">
-			<strong>Confirm Password: </strong><input type="text" class="form-control" name="Adres">
+			<strong>Username: </strong><input type="text" class="form-control" value="" type="" name="Username">
+			<strong>Password: </strong><input type="text" class="form-control" value="" type="password" name="Password">
+			<strong>Confirm Password: </strong><input type="text" class="form-control" type="password" name="Confirm_Password">
 			<button class="btn btn-success">Submit</button>
 		</form>
 	</div>
 
+<!-- 	<div id="someTxt">
+		<h1>kjcjfojvfojo</h1>
+	</div> -->
+<script type="text/javascript" src="../public/filee.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ form{
 }
 
 #data{
-	width:50%;
+	width:30%;
 	margin: auto;
 }
 #header{
@@ -39,14 +39,39 @@ form{
 	float: left;
 	margin-left: 30px;
 }
+
+#body404{
+	background-color: skyblue;
+}
+
+
 ul li{
 	display: inline;
 }
+
+/*CLASS*/
 
 .Logo{
 
 	float: left;
 	margin-top: 15px;
+}
+
+.notFound{
+	text-align: center;
+	margin-top: 20%;
+	line-height: 10px;
+}
+
+.notFound h1{
+	color: #fff;
+	font-family: helvetica;
+	font-size: 60px;
+}
+.notFound p{
+	color: #fff;
+	font-family: helvetica;
+	letter-spacing: 2px;
 }
 
 .form{
